@@ -194,6 +194,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # WiFi
 PRODUCT_PACKAGES += \
+    TetheringConfigOverlay \
     WifiOverlay
 
 # WiFi Display
