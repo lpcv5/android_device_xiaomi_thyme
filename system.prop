@@ -1,0 +1,51 @@
+# Audio
+ro.config.media_vol_default=10
+persist.audio.button_jack.profile=volume
+persist.audio.button_jack.switch=0
+use.voice.path.for.pcm.voip=true
+
+# Bluetooth
+ro.bluetooth.library_name=libbluetooth_qti.so
+persist.vendor.btstack.aac_frm_ctl.enabled=true
+
+# Charger
+ro.charger.enable_suspend=1
+persist.vendor.cp.taper_term_mv=7000
+persist.vendor.cp.fcc_main_ua=400000
+persist.vendor.cp.qc3p5_vfloat_offset_uv=110000
+
+# CNE
+persist.vendor.cne.feature=1
+
+# Display
+debug.sf.enable_hwc_vds=1
+debug.sf.latch_unsignaled=1
+
+# DPM
+persist.dpm.feature=1
+
+# Media
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+
+# Netflix
+ro.netflix.bsp_rev=Q8250-19134-1
+
+# Netmgr
+persist.vendor.data.mode=concurrent
+
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# Time
+persist.timed.enable=true
+
+# Vendor
+ro.vendor.qti.va_aosp.support=1
+
+# WiFi
+ro.hardware.wlan.chip=
+ro.hardware.wlan.dbs=0
+ro.hardware.wlan.vendor=qcom
+
+# Xiaomi
+ro.fota.oem=Xiaomi
