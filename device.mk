@@ -109,6 +109,7 @@ PRODUCT_COPY_FILES += \
 
 # Kernel
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/Image:Image \
     $(LOCAL_PATH)/prebuilt/dtb.img:dtb.img
 
 # Lights
