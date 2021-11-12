@@ -92,7 +92,7 @@ TARGET_KERNEL_CONFIG := vendor/thyme-user_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/thyme
 
 # Metadata
-BOARD_USES_METADATA_PARTITION := true
+# BOARD_USES_METADATA_PARTITION := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
