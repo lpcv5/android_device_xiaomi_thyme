@@ -1,25 +1,27 @@
 
- Device configuration for Xiaomi MI 10T Lite / Xiaomi MI 10i / Redmi Note 9 Pro 5G
+ Device configuration for Xiaomi Mi 10S
  =========================================
 
- The Xiaomi MI 10T Lite / Xiaomi MI 10i / Redmi Note 9 Pro 5G (codenamed _"gauguin"_) is a smartphone from Xiaomi.
+ The Xiaomi Mi 10S (codenamed _"thyme"_) is a smartphone from Xiaomi.
 
  ## Device specifications
 
  Basic   | Spec Sheet
  -------:|:-------------------------
- SoC     | Qualcomm SM7225 Snapdragon 750G 5G (8 nm)
- CPU     | Octa-core (2x2.2 GHz Kryo 570 & 6x1.8 GHz Kryo 570)
- GPU     | Adreno 619
- Memory  | 6/8 GB RAM
- Shipped Android Version | 10.0 with MIUI 12
+ SoC     | Qualcomm SM8250-AC Snapdragon 870 5G
+ CPU     | Octa-core (1x3.2 GHz Kryo 585 & 3x2.42 GHz Kryo 585 & 4x1.80 GHz Kryo 585)
+ GPU     | Adreno 650
+ Memory  | 8/12 GB RAM
+ Shipped Android Version | Android 11
  Storage | 128/256 GB
- Battery | Li-Po 4820 mAh, non-removable
- Display | IPS LCD, HDR10, 120Hz, 450 nits (typ)
- Camera (Redmi Note 9 Pro 5G / MI 10i)  | 108 MP, f/1.8, 26mm (wide) 8 MP, f/2.2, 118˚ (ultrawide) 2 MP, f/2.4, (macro) 2 MP, f/2.4, (depth)
- Camera (MI 10T Lite)  | 64 MP, f/1.9, 26mm (wide) 8 MP, f/2.2, 118˚ (ultrawide) 2 MP, f/2.4, (macro) 2 MP, f/2.4, (depth)
+ Battery | Li-Po 4780 mAh, non-removable
+ Display | AMOLED, 90Hz, HDR10+, 500 nits (typ), 1120 nits (peak)
+ Camera (wide) | 108 MP, f/1.7 26mm, 1/1.33", 0.8µm, PDAF, OIS
+ Camera (ultrawide) | 13 MP, f/2.4, 123˚
+ Camera (macro) | 2 MP, f/2.4
+ Camera (depth) | 2 MP, f/2.4 
 
  ## Device picture
 
- ![Redmi Note 9 Pro 5G](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note9-pro-1.jpg "Redmi Note 9 Pro 5G")
+ ![Mi 10S](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi-10s-2.jpg)
  

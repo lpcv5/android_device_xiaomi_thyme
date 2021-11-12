@@ -15,9 +15,9 @@
 //
 
 cc_library_static {
-    name: "libinit_gauguin",
+    name: "libinit_thyme",
     recovery_available: true,
-    srcs: ["init_gauguin.cpp"],
+    srcs: ["init_thyme.cpp"],
     whole_static_libs: ["libbase"],
     include_dirs: [
         "system/core/base/include",

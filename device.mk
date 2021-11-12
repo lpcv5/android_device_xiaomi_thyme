@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/gauguin/gauguin-vendor.mk)
+$(call inherit-product, vendor/xiaomi/thyme/thyme-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -105,7 +105,7 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl \
-    $(LOCAL_PATH)/configs/keylayout/lito-lagoonqrd-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/lito-lagoonqrd-snd-card_Button_Jack.kl
+    $(LOCAL_PATH)/configs/keylayout/kona-lagoonqrd-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/kona-lagoonqrd-snd-card_Button_Jack.kl
 
 # Kernel
 PRODUCT_COPY_FILES += \
@@ -113,7 +113,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.qti-gauguin
+    android.hardware.lights-service.qti-thyme
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -148,20 +148,10 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.gauguin
-
-# Recovery
-BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_USES_RECOVERY_AS_BOOT := false
-TARGET_NO_RECOVERY := false
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
-TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
-TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true
-TARGET_USES_MKE2FS := true
+    android.hardware.power-service.thyme
 
 # Soong
-PRODUCT_BOARD_PLATFORM := lito
+PRODUCT_BOARD_PLATFORM := kona
 PRODUCT_USES_QCOM_HARDWARE := true
 
 # Soong namespaces

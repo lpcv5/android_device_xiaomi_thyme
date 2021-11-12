@@ -5,7 +5,7 @@
 #
 
 BOARD_VENDOR := xiaomi
-DEVICE_PATH := device/xiaomi/gauguin
+DEVICE_PATH := device/xiaomi/thyme
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -28,7 +28,7 @@ TARGET_USES_64_BIT_BINDER := true
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := gauguin,gauguininpro,gauguinpro
+TARGET_OTA_ASSERT_DEVICE := thyme
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -45,7 +45,7 @@ TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 TARGET_USE_QTI_BT_STACK := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := lito
+TARGET_BOOTLOADER_BOARD_NAME := kona
 TARGET_NO_BOOTLOADER := true
 
 # Camera
@@ -65,8 +65,8 @@ BOARD_HAS_QCA_FM_SOC := "cherokee"
 BOARD_HAVE_QCOM_FM := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_gauguin
-TARGET_RECOVERY_DEVICE_MODULES := libinit_gauguin
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_thyme
+TARGET_RECOVERY_DEVICE_MODULES := libinit_thyme
 
 # Input
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY := 102
@@ -120,15 +120,18 @@ BUILD_WITHOUT_VENDOR := true
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := lito
+TARGET_BOARD_PLATFORM := kona
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 TARGET_HAL_POWER_RW_INPUT_DEVICE := true
 
 # Recovery
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TARGET_USERIMAGES_USE_F2FS := true
+TARGET_USES_MKE2FS := true
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
@@ -157,4 +160,4 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/framework_manifest.xml
 
 # Inherit from the proprietary version
--include vendor/xiaomi/gauguin/BoardConfigVendor.mk
+-include vendor/xiaomi/thyme/BoardConfigVendor.mk

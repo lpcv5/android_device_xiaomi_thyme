@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_gauguin.mk
+    $(LOCAL_DIR)/aosp_thyme.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_gauguin-user \
-    aosp_gauguin-userdebug \
-    aosp_gauguin-eng
+    aosp_thyme-user \
+    aosp_thyme-userdebug \
+    aosp_thyme-eng

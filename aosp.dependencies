@@ -1,7 +1,7 @@
 [
     { 
-        "repository"   : "vendor_xiaomi_gauguin",
-        "target_path"  : "vendor/xiaomi/gauguin",
+        "repository"   : "vendor_xiaomi_thyme",
+        "target_path"  : "vendor/xiaomi/thyme",
         "branch"       : "eleven",
         "remote"       : "pixel-devices-blobs"
     }
