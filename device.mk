@@ -62,6 +62,11 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.sh \
     init.recovery.qcom.rc
 
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/Image:Image \
+    $(LOCAL_PATH)/prebuilt/dtb.img:dtb.img
+
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
