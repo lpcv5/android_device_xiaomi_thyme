@@ -272,7 +272,7 @@ PRODUCT_COPY_FILES += \
 # Init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    fstab.ramdisk \
+    fstab.qcom.first_stage_ramdisk \
     init.class_main.sh \
     init.mdm.sh \
     init.mi.usb.sh \
