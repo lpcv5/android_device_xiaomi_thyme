@@ -5,8 +5,8 @@
 //
 
 cc_library_static {
-    name: "libinit_lmi",
-    srcs: ["init_lmi.cpp"],
+    name: "libinit_thyme",
+    srcs: ["init_thyme.cpp"],
     shared_libs: ["libbase"],
     recovery_available: true,
     include_dirs: [

@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/lmi/lmi-vendor.mk)
+$(call inherit-product, vendor/xiaomi/thyme/thyme-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -202,8 +202,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_lmi \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_lmi
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_thyme \
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_thyme
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -275,7 +275,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_lmi
+    android.hardware.light@2.0-service.xiaomi_thyme
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -423,7 +423,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.xiaomi_lmi
+    vendor.qti.hardware.vibrator.service.xiaomi_thyme
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vibrator/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml

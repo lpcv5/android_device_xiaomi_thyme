@@ -27,7 +27,7 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#define LOG_TAG "vendor.qti.vibrator.xiaomi_lmi"
+#define LOG_TAG "vendor.qti.vibrator.xiaomi_thyme"
 
 #include <cutils/properties.h>
 #include <dirent.h>
