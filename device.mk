@@ -317,6 +317,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
+# DTB
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/dtb.img:dtb.img
+
+# Kernel Modules
+KERNEL_MODULES_DIR := $(LOCAL_PATH)/prebuilt/modules
+KERNEL_MODULES_COPY := $(TARGET_COPY_OUT_VENDOR)/lib/modules
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(KERNEL_MODULES_DIR),$(KERNEL_MODULES_COPY))
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \

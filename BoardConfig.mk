@@ -61,6 +61,11 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/thyme
 TARGET_KERNEL_CONFIG := vendor/thyme_user_defconfig
 
+TARGET_FORCE_PREBUILT_KERNEL := true
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+
 # Platform
 TARGET_BOARD_PLATFORM := kona
 
